@@ -28,7 +28,7 @@ class Onebox::Engine::YouriGuideOnebox
         0
     end
 
-    REGEX = /^https?:\/\/(?:www\.)?youriguide\.com\/(?:embed\/)?(.*?)$/i
+    REGEX = /^(.*?)?youriguide\.com\/(?:embed\/)?(.*?)$/i
     
     matches_regexp REGEX
 
