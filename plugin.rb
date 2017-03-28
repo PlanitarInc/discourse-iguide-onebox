@@ -38,8 +38,11 @@ class Onebox::Engine::YouriGuideOnebox
 
     def to_html
         <<HTML
+        <pre>
+        #{id}
+        </pre>
         <div class="youriguide-embed">
-                <iframe class="youriguide-frame" src="https://youriguide.com/embed/#{id}?unbranded=1&bgcolor=FFFFFF" scrolling="no" frameborder="0" allowfullscreen></iframe></div>
+                <iframe class="youriguide-frame" src="https://youriguide.com/embed/#{id}" scrolling="no" frameborder="0" allowfullscreen></iframe></div>
         </div>
 HTML
     end
