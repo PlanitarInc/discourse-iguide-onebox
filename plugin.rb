@@ -28,7 +28,7 @@ class Onebox::Engine::YouriGuideOnebox
         0
     end
 
-    REGEX = /^(.*?)?youriguide\.com\/(?:embed\/)?(.*?)$/i
+    REGEX = /^https?:\/\/(.*?)?youriguide\.com\/(?:embed\/)?(.*?)$/i
     
     matches_regexp REGEX
 
@@ -39,7 +39,7 @@ class Onebox::Engine::YouriGuideOnebox
     def to_html
         <<HTML
         <div class="youriguide-embed">
-                <iframe class="youriguide-frame" src="//youriguide.com/embed/#{id}?unbranded=1&bgcolor=FFFFFF" scrolling="no" frameborder="0" allowfullscreen></iframe></div>
+                <iframe class="youriguide-frame" src="https://youriguide.com/embed/#{id}?unbranded=1&bgcolor=FFFFFF" scrolling="no" frameborder="0" allowfullscreen></iframe></div>
         </div>
 HTML
     end
