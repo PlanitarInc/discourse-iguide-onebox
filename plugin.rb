@@ -21,7 +21,7 @@ CSS
 
 
 Onebox = Onebox
-class Onebox::Engine::youriguideOnebox
+class Onebox::Engine::YouriGuideOnebox
     include Onebox::Engine
 
     def self.priority
