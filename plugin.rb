@@ -9,7 +9,7 @@ register_css <<CSS
 
 .youriguide-embed {
     position: relative;
-    height: 400px;
+    height: 394px;
 }
 
 .youriguide-frame {
@@ -39,7 +39,7 @@ class Onebox::Engine::YouriGuideOnebox
     def to_html
         <<HTML
         <div class="youriguide-embed">
-                <iframe class="youriguide-frame" src="//youriguide.com/#{id}"></iframe>
+                <iframe class="youriguide-frame" src="//youriguide.com/embed/#{id}?unbranded=1&bgcolor=FFFFFF" scrolling="no" frameborder="0" allowfullscreen></iframe></div>
         </div>
 HTML
     end
