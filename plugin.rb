@@ -28,17 +28,18 @@ class Onebox::Engine::YouriGuideOnebox
         0
     end
 
-    REGEX = /^https?:\/\/(?:www\.)?youriguide\.com\/(?:embed\/)?(.*?)$/i
+    REGEX = /^https?:\/\/(www\.)?youriguide\.com\/(embed\/)?(?<ig>.*?)$/i
     
     matches_regexp REGEX
 
     def id
-        @url.match(REGEX)[1]
+        @url.match(REGEX)[:ig]
     end
 
     def to_html
         <<HTML
         <pre>
+        ID:
         #{id}
         </pre>
         <div class="youriguide-embed">
