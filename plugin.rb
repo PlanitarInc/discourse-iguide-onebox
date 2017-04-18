@@ -13,7 +13,7 @@ register_css <<CSS
 }
 
 .youriguide-frame {
-    border: none;
+    border-style: none;
     width: 100%;
     height: 100%;
 }
