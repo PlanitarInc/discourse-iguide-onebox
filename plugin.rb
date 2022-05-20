@@ -1,9 +1,10 @@
 #!/bin/env ruby
 # encoding: utf-8
 # name: youriguide.com Onebox
-# version: 0.1
+# version: 0.2
 # authors: planitar
 
+require "onebox"
 
 register_css <<CSS
 
